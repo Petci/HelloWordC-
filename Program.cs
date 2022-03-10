@@ -207,8 +207,8 @@ namespace Hello_World
 
 
             //Harmadik óra
-            int j = -5;
-            if (j > 0)
+            int j3 = -5;
+            if (j3 > 0)
             { //Debugnál arra a sorra ugrik, amelyik feltétel teljesül.
                 Console.WriteLine("A j értéke nagyobb, mint nulla.");
             }
@@ -373,291 +373,291 @@ namespace Hello_World
             //Negyedik óra
             for (int ia = 1; ia <= 5; ia = ia + 1)
             {
-                System.out.println(ia);
+                Console.WriteLine(ia);
             }
 
             /*
-            System.out.println("Kérek egy számot:");
-            int nb4 = scan.nextInt();
-            System.out.println(nb4 + "osztói");
-            System.out.println(1);
+            Console.WriteLine("Kérek egy számot:");
+            int nb4 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(nb4 + "osztói");
+            Console.WriteLine(1);
             for (int ib = 2; ib <= nb4 / 2; ib++) {
             if (nb4 % ib == 0) {
-            System.out.println(ib);
+                    Console.WriteLine(ib);
             }
             }
-            System.out.println(nb4);
-            System.out.println("Kérek egy páratlan számot:");
-            int nc4 = scan.nextInt();
+            Console.WriteLine(nb4);
+            Console.WriteLine("Kérek egy páratlan számot:");
+            int nc4 = Convert.ToInt32(Console.ReadLine());
             while (nc4 % 2 == 0) {
-            System.out.println("A szám páros kérek egy páratlan számot!");
-            nc4 = scan.nextInt();
+                Console.WriteLine("A szám páros kérek egy páratlan számot!");
+            nc4 = Convert.ToInt32(Console.ReadLine());
             }
-            System.out.println(nc4 * 2);
+            Console.WriteLine(nc4 * 2);
             //*/
             Random rnd = new Random();
-            /*
+            //*
             int velSzam4;
             do {
-                velSzam4 = rnd.nextInt(20) + 1;
+                velSzam4 = rnd.Next(20) + 1;
             } while (velSzam4 % 2 != 0);
-            System.out.println(velSzam4);
+            Console.WriteLine(velSzam4);
             //*/
-            /*
-            int velszam4 = rnd.nextInt(5) + 1;
+            //*
+            int velszam4 = rnd.Next(5) + 1;
             int tipp;
             for (int ic4 = 1; ic4 <= 10; ic4++) {
-                System.out.println("Add meg a (z)" + ic4 + ". tipped:");
-                tipp = scan.nextInt();
+                Console.WriteLine("Add meg a (z)" + ic4 + ". tipped:");
+                tipp = Convert.ToInt32(Console.ReadLine());
                 if (tipp == velszam4) {
-                    System.out.println("Gratulálok kitaláltad a számot!");
+                    Console.WriteLine("Gratulálok kitaláltad a számot!");
                     break;
                 }  
             }
             for (int id4 = 1; id4 <= 10; id4++) {
-                System.out.println("Add meg a (z)" + id4 + ". tipped:");
-                tipp = scan.nextInt();
+                Console.WriteLine("Add meg a (z)" + id4 + ". tipped:");
+                tipp = Convert.ToInt32(Console.ReadLine());
                 if (tipp != velszam4) {
                     continue;
                 }
-                System.out.println("Gratulálok kitaláltad a számot!");
+                Console.WriteLine("Gratulálok kitaláltad a számot!");
                 break;
             }
             //*/
             //1. Írd ki a számokat 1 -től 10 -ig egyesével.
             for (int a41 = 1; a41 <= 10; a41++)
             {
-                System.out.println(a41);
+                Console.WriteLine(a41);
             }
             //2. Írd ki a számokat -15-től 30-ig kettesével.
             for (int a42 = -15; a42 <= 30; a42++)
             {
                 if (a42 % 2 == 0)
                 {
-                    System.out.println(a42);
+                    Console.WriteLine(a42);
                 }
 
             }
             //3. Írd ki a páros számokat 10 - 30 között úgy, hogy a ciklus fejében nem használsz if-et.
             for (int a43 = 5; a43 <= 15; a43++)
             {
-                System.out.println(a43 * 2);
+                Console.WriteLine(a43 * 2);
 
             }
             //4. Írd ki a számokat 10 -től -10 -ig visszafelé egyesével.
             for (int a44 = 10; a44 >= -10; a44--)
             {
-                System.out.println(a44);
+                Console.WriteLine(a44);
 
             }
             //5. Írd ki a számokat 0- tól 10 -ig egynegyedes lépésközzel.
             for (double a45 = 0; a45 <= 10; a45 += 0.25)
             {
-                System.out.println(a45);
+                Console.WriteLine(a45);
 
             }
             //6. A felhasználótól kérj be egy intervallumot A és B, egy lépésközt N, majd ezen intervallumon belül írd ki a megadott lépésközzel a számokat.
-            /*
-            System.out.println("Adj meg egy számot:");
-            double a46 = scan.nextDouble();
-            System.out.println("Adj meg egy másik számot:");
-            double b46 = scan.nextDouble();
-            System.out.println("Adj meg egy lépéközt:");
-            double n46 = scan.nextDouble(); //Ha nem egészt számat adunk meg akkor szétcsúszik a megoldás!!
+            //*
+            Console.WriteLine("Adj meg egy számot:");
+            double a46 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Adj meg egy másik számot:");
+            double b46 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Adj meg egy lépéközt:");
+            double n46 = Convert.ToDouble(Console.ReadLine()); //Ha nem egészt számat adunk meg akkor szétcsúszik a megoldás!!
             for (double i46 = a46; i46 <= b46; i46+=n46) {
-            System.out.println(i46);
+            Console.WriteLine(i46);
             }
             //*/
             //7. Oldd meg, azt, ha a felhasználó az intervallumot "fordítva" adja meg, Tehát A > B, akkor a program csökkenő sorrendben, ha "normál" módon B > A akkor növekvő sorrendben írja a növekménynek megfelelően a számokat.
-            /*
-            System.out.println("Adj meg egy egész számot:");
-            int a47 = scan.nextInt();
-            System.out.println("Adj meg egy másik egész számot:");
-            int b47 = scan.nextInt();
+            //*
+            Console.WriteLine("Adj meg egy egész számot:");
+            int a47 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Adj meg egy másik egész számot:");
+            int b47 = Convert.ToInt32(Console.ReadLine());
             if (a47 > b47) {
                 for (int i47 = a47; i47 >= b47; i47--) {
-                    System.out.println(i47);
+                    Console.WriteLine(i47);
                 }
             } else {
                 for (int i471 = a47; i471 <= b47; i471++) {
-                    System.out.println(i471);
+                    Console.WriteLine(i471);
                 }
             }
             //*/
             //8. Oldd meg azt, ha a felhasználó "fordítva", vagy "normál" adja meg a számokat, akkor a program mindig növekvően írja ki a számokat!
-            /*
-            System.out.println("Adj meg egy egész számot:");
-            int a48 = scan.nextInt();
-            System.out.println("Adj meg egy másik egész számot:");
-            int b48 = scan.nextInt();
+            //*
+            Console.WriteLine("Adj meg egy egész számot:");
+            int a48 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Adj meg egy másik egész számot:");
+            int b48 = Convert.ToInt32(Console.ReadLine());
             if (a48 < b48) {
                 for (int i481 = a48; i481 <= b48; i481++) {
-                    System.out.println(i481);
+                    Console.WriteLine(i481);
                 }
             } else {
                 for (int i48 = b48; i48 <= a48; i48++) {
-                    System.out.println(i48);
+                    Console.WriteLine(i48);
                 }
             }
             //*/
             //9. Írj ki 10 db. véletlenszámot a 20 és 80 közötti intervallumban.
-            /*
+            //*
             int velSzam49;
             for (int i49 = 1; i49 <= 10; i49++) {
-                velSzam49 = rnd.nextInt(60) + 20;
-                System.out.println(velSzam49);
+                velSzam49 = rnd.Next(60) + 20;
+                Console.WriteLine(velSzam49);
 
             }
             //*/
             //10. Kérj be egy egész számot, majd írj ki ennyi csillag jelet egymás mellé!
-            /*
-            System.out.println("Kérek egy egész számot!");
-            int a410 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy egész számot!");
+            int a410 = Convert.ToInt32(Console.ReadLine());
             for (int i410 = 1; i410 <= a410; i410++) {
-                System.out.print("*");
+                Console.Write("*");
             }
-            System.out.println(" ");
+            Console.WriteLine(" ");
             //*/
             //11. Írj lotto programot. A 13+1 tippet 1,2,X eredménnyel add meg. Pl. 1. tipp -> 2, 2. tipp -> X,...
-            /*
-            int velszam411 = rnd.nextInt(13) + 1;
-            int tipp;
+            //*
+            int velszam411 = rnd.Next(13) + 1;
+            int tippa411;
             for (int ia411 = 1; ia411 <= 13; ia411++) {
-                System.out.println("Add meg a (z)" + ia411 + ". tipped:");
-                tipp = scan.nextInt();
-                System.out.println("1. tipp -> " + tipp);
-                if (tipp == velszam411) {
-                    System.out.println("Gratulálok kitaláltad a számot!");
+                Console.WriteLine("Add meg a (z)" + ia411 + ". tipped:");
+                tippa411 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("1. tipp -> " + tippa411);
+                if (tippa411 == velszam411) {
+                    Console.WriteLine("Gratulálok kitaláltad a számot!");
                     break;
                 }
             }
             //*/
 
             //12. Kérj be 10 számot, majd minden egyes lépésben írd ki az adott szám négyzetét.
-            /*
+            //*
             for (int m = 1; m <= 10; m++) {
-                System.out.println("Kérek egy számot");
-                int a412 = scan.nextInt();
-                System.out.println(Math.pow(a412, 2));
+                Console.WriteLine("Kérek egy számot");
+                int a412 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(Math.Pow(a412, 2));
             }
             //*/
             //13. Kérj be 10 számot, majd minden egyes lépésben írd ki a szám szinuszát. Vigyázz, a Math.sin() függvény radiánban várja az adatot. A Math.toRadians() függvény a fokban megadott értéket átszámítja radiánba.
-            /*
+            //*
             for (int m = 1; m <= 10; m++) {
-                System.out.println("Kérek egy számot");
-                int a413 = scan.nextInt();
-                System.out.println(Math.toRadians(a413));
+                Console.WriteLine("Kérek egy számot");
+                int a413 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(Math.PI / 180 * a413);
 
             }
             //*/
             //14. Egy kockával 10-szer dobunk. Írd ki a kockadobás eredményeit számokkal. A dobások értékeit véletlenszám generálással oldd meg.
             for (int m = 1; m <= 10; m++)
             {
-                int a414 = rnd.nextInt(5) + 1;
-                System.out.println(a414);
+                int a414 = rnd.Next(5) + 1;
+                Console.WriteLine(a414);
 
             }
 
             //15. Kérj be egy számot, majd írd ki az osztóit, osztóinak darabszámát! Az osztók darabszáma alapján döntsd el, hogy a szám prímszám-e!
-            /*
-            System.out.println("Kérek egy számot");
-            int a415 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy számot");
+            int a415 = Convert.ToInt32(Console.ReadLine());
             int oszt415 = 0;
             for (int m = 1; m <= a415; m++) {
                 if(m%a415 == 0){
                     oszt415++;
-                    System.out.println(m);
+                    Console.WriteLine(m);
                 }
 
             }
             if (oszt415 == 2) {
-                System.out.println("A szám páros");
+                Console.WriteLine("A szám páros");
 
             }
             //*/
 
             //16. Kérj be egy számot n, majd írd ki n! értékét.
-            /*
-            System.out.println("kérek egy számot");
-            int a416 = scan.nextInt();
+            //*
+            Console.WriteLine("kérek egy számot");
+            int a416 = Convert.ToInt32(Console.ReadLine());
             int b416 = 1;
             for (int m = a416; m >= 1; m--) {
                 b416 = b416*a416;
                 a416--;
             }
-            System.out.println(b416);
+            Console.WriteLine(b416);
             //*/
             //17. Kérj be a felhasználótól egy páros számot! A program addig ne menjen tovább, amíg a felhasználó által megadott szám nem páros!
-            /*
-            System.out.println("Kérek egy páros számot");
-            int a417 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy páros számot");
+            int a417 = Convert.ToInt32(Console.ReadLine());
             while(a417%2 != 0){
-                System.out.println("Egy Páros számot kérek");
-                a417 = scan.nextInt();
+                Console.WriteLine("Egy Páros számot kérek");
+                a417 = Convert.ToInt32(Console.ReadLine());
             }
             //*/
             //18. Állíts elő egy véletlen páros számot a 20 és 80 intervallumban.
-            int a418 = (rnd.nextInt(30) + 11) * 2;
-            System.out.println(a418);
+            int a418 = (rnd.Next(30) + 11) * 2;
+            Console.WriteLine(a418);
 
             //19. Készíts számkitalálós programot! A program állítson elő egy véletlenszámot, amit a felhasználónak ki kell találnia. A program kérje be a felhasználó tippjeit. Ha a tipp kisebb, mint a program által előállított, akkor a program írja ki, hogy az én számom nagyobb, ha kisebb, akkor azt, hogy az én számom nagyobb. A program a végén írja ki, hogy hány lépésben sikerült kitalálni a számot!
-            /*
-            int a419 = rnd.nextInt(10)+1;
-            System.out.println("Kérek egy számot");
-            int tipp419 = scan.nextInt();
+            //*
+            int a419 = rnd.Next(10)+1;
+            Console.WriteLine("Kérek egy számot");
+            int tipp419 = Convert.ToInt32(Console.ReadLine());
             int b419 = 1;
             while(a419 != tipp419){
                 if(tipp419 < a419){
-                    System.out.println("A szám nagyobb, adj meg egy újat");
-                    tipp419 = scan.nextInt();
+                    Console.WriteLine("A szám nagyobb, adj meg egy újat");
+                    tipp419 = Convert.ToInt32(Console.ReadLine());
                     b419++;
                 } else {
-                    System.out.println("A szám kisebb, adj meg egy új számot");
-                    tipp419 = scan.nextInt();
+                    Console.WriteLine("A szám kisebb, adj meg egy új számot");
+                    tipp419 = Convert.ToInt32(Console.ReadLine());
                     b419++;
                 }
             }
-            System.out.println("Gratulálok eltaláltad a számot " + b419 + " lépésből!");
+            Console.WriteLine("Gratulálok eltaláltad a számot " + b419 + " lépésből!");
             //*/
             //20. Állítsd elő a szorzótáblát táblázatos formában, az alábbi módon. Hogy hányszor hányas szorzótábla legyen, azt a felhasználótól kérd be
-            /*
-            System.out.println("Kérek egy számot"); //Szépség hibás de jó!
-            int a420 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy számot"); //Szépség hibás de jó!
+            int a420 = Convert.ToInt32(Console.ReadLine());
             for (int m = 0; m <= a420; m++) {
-                System.out.print(m);
+                Console.WriteLine(m);
             }
-            System.out.println("");
+            Console.WriteLine("");
             for (int m = 1; m <= a420; m++) {
-                System.out.print(m);
+                Console.Write(m);
                 for (int n = 1; n <= a420; n++) {
-                    System.out.print(m*n);
+                    Console.Write(m*n);
                 }
-                System.out.println("");
+                Console.WriteLine("");
             }
             //*/
             //21. Írd ki a Fibonacci számsort a felhasználótól bekért határig.
-            /*
+            //*
             int a421 = 0;
             int b421 = 1;
             int c421;
-            System.out.println("Kérek egy számot");
-            int d421 = scan.nextInt();
-            System.out.println(a421);
-            System.out.println(b421);
+            Console.WriteLine("Kérek egy számot");
+            int d421 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(a421);
+            Console.WriteLine(b421);
             for (int m = 1; m <= d421; m++) {
                 c421 = a421+b421;
-                System.out.println(c421);
+                Console.WriteLine(c421);
                 a421 = b421;
                 b421 = c421;
 
             }
             //*/
             //22. Kérj be a felhasználótól egy számot, majd írd ki a számnál nagyobb első prímszámot / tökéletes számot.
-            /*
-            System.out.println("Kérek egy számot:"); // Tökéletes számmal nincs megcsinálva, míg ez a megoldott feladat.
-            int n422 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy számot:"); // Tökéletes számmal nincs megcsinálva, míg ez a megoldott feladat.
+            int n422 = Convert.ToInt32(Console.ReadLine());
             int n4221 = n422; // megjegyezzük, hogy a végén ki tudjuk írni
-            boolean primE;
+            Boolean primE;
             do {
                 primE = true;
                 for (int m = 2; m <= n422 / 2; m++) {
@@ -668,14 +668,14 @@ namespace Hello_World
                     }
                 }            
             } while (!primE);
-            System.out.println(n4221 + " számhoz jobbról legközelebb eső prímszám : " + n422);
+            Console.WriteLine(n4221 + " számhoz jobbról legközelebb eső prímszám : " + n422);
             //*/
             //23.  Kérj be a felhasználótól egy számot, majd írd ki a számnál kisebb első prímszámot / tökéletes számot.
-            /*
-            System.out.println("Kérek egy számot:");
-            int n423 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy számot:");
+            int n423 = Convert.ToInt32(Console.ReadLine());
             int n4231 = n423; 
-            boolean prime423;
+            Boolean prime423;
             do {
                 prime423 = true;
                 for (int m = n423 / 2; m >= 2; m--) {
@@ -686,15 +686,15 @@ namespace Hello_World
                     }
                 }            
             } while (!prime423);
-            System.out.println(n4231 + " számhoz balról legközelebb eső prímszám : " + n423);
+            Console.WriteLine(n4231 + " számhoz balról legközelebb eső prímszám : " + n423);
             //*/
             //24.  Kérj be a felhasználótól egy számot, majd írd ki a számhoz legközelebb álló, kisebb, vagy nagyobb prímszámot / tökéletes számot.
-            /*
-            System.out.println("Kérek egy számot:"); // Tökéletes számmal nincs megcsinálva, míg ez a megoldott feladat.
-            int n424 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy számot:"); // Tökéletes számmal nincs megcsinálva, míg ez a megoldott feladat.
+            int n424 = Convert.ToInt32(Console.ReadLine());
             int n4241 = n424; // megjegyezzük, hogy a végén ki tudjuk írni
             int n4242 = n424;
-            boolean prime424;
+            Boolean prime424;
             do {
                 prime424 = true;
                 for (int m = 2; m <= n424 / 2; m++) {
@@ -716,339 +716,342 @@ namespace Hello_World
                 }            
             } while (!prime424);
             if(n424-n4241 < n4241-n4242){
-                System.out.println(n4241 + " számhoz jobbról legközelebb eső prímszám : " + n424);
+                Console.WriteLine(n4241 + " számhoz jobbról legközelebb eső prímszám : " + n424);
             } else if (n424-n4241 > n4241-n4242) {
-                System.out.println(n4241 + " számhoz balról legközelebbi eső prímszám : " + n4242);
+                Console.WriteLine(n4241 + " számhoz balról legközelebbi eső prímszám : " + n4242);
             } else {
-                System.out.println(n4241 + "számhoz ugyan olyan közel eső prímszámok : " + n4242 + " és " + n424);
+                Console.WriteLine(n4241 + "számhoz ugyan olyan közel eső prímszámok : " + n4242 + " és " + n424);
             }
             //*/
             //25. Állítsd elő a szinus, cosinus táblázatot a fenti szorzótáblához hasonlóan 0.5-ös lépésközzel.
-            /*
-            System.out.println("Kérek egy számot");
-            int a425 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérek egy számot");
+            int a425 = Convert.ToInt32(Console.ReadLine());
             for (double m = 0; m <= a425; m += 0.5) {
-                System.out.print(m);
+                Console.WriteLine(m);
             }
-            System.out.println("");
-            System.out.print("Sin:");
+            Console.WriteLine("");
+            Console.Write("Sin:");
             for (double m = 1; m <= a425; m += 0.5) {
-                System.out.print(Math.sin(m));
+                Console.Write(Math.Sin(m));
             }
-            System.out.println("");
-            System.out.print("Cos:");
+            Console.WriteLine("");
+            Console.Write("Cos:");
             for (double m = 1; m <= a425; m += 0.5) {
-                System.out.print(Math.cos(m));
+                Console.Write(Math.Cos(m));
             }
-            System.out.println("");
+            Console.WriteLine("");
             //*/
             //26. Kérj be a felhasználótól 10 db. páros számot! Ha a felhasználó által megadott szám páralan, akkor figyelmeztesd és úrja kérd be a számot. A program írja ki, hogy éppen hányadik szám beolvasásánál tart. Oldd meg a feladatot egy ciklus alkalmazásával is!
-            /*
+            //*
             int co426 = 0;
             int con426 = 0;
             int a426;
             while(co426 != 10) {
-                System.out.println("Kérek egy páros számot");
-                a426 = scan.nextInt();
+                Console.WriteLine("Kérek egy páros számot");
+                a426 = Convert.ToInt32(Console.ReadLine());
                 con426++;
-                System.out.println(con426 + ". szám beolvasva");
+                Console.WriteLine(con426 + ". szám beolvasva");
                 if (a426%2 == 0){
                     co426++;
                 } else {
-                    System.out.print("A szám páratlan! ");
+                    Console.Write("A szám páratlan! ");
                 }
             }
             //*/
             //27. Állíts elő 10 db. páratlan véletlenszámot! A számokat a program egymás mellett vesszővel elválasztva írja ki! Oldd meg a feladatot egy ciklus alkalmazásával is!
-            int a427 = ((rnd.nextInt(10) + 1) * 2) - 1;
-            System.out.print(a427);
+            int a427 = ((rnd.Next(10) + 1) * 2) - 1;
+            Console.WriteLine(a427);
             for (int m = 1; m <= 9; m++)
             {
-                a427 = ((rnd.nextInt(10) + 1) * 2) - 1;
-                System.out.print("," + a427);
+                a427 = ((rnd.Next(10) + 1) * 2) - 1;
+                Console.Write("," + a427);
             }
-            System.out.println("");
+            Console.WriteLine("");
 
 
             //Ötödik óra
             int[] nums5 = { 0, 2, 4, 6, 8 };
-            System.out.println("Elemek: " + Arrays.toString(nums5));
+            Console.WriteLine("Elemek: " + "[{0}]", string.Join(", ", nums5));
 
             int[] szamok5 = new int[15];
             szamok5[3] = 27; //Ez a negyedik számnak írja, mert 0-val kezdődik.
-            szamok5[szamok5.length - 1] = 27;
-            System.out.println(szamok5);//Tömb referencia azonosítója
-            System.out.println(Arrays.toString(szamok5));
+            szamok5[szamok5.Length - 1] = 27;
+            Console.WriteLine(szamok5);//Tömb referencia azonosítója
+            Console.WriteLine("[{0}]", string.Join(", ", nums5));
 
             int[] szam5 = new int[10];
-            for (int j = 0; j < szam5.length; j++)
+            for (int j = 0; j < szam5.Length; j++)
             {
-                szam5[j] = rnd.nextInt(100) + 1;
+                szam5[j] = rnd.Next(100) + 1;
             }
-            System.out.println(Arrays.toString(szam5));
+            Console.WriteLine("[{0}]", string.Join(", ", szam5));
 
-            /*
+            //*
             double[] homersekletek = new double[5];
-            for (int j = 0; j < homersekletek.length; j++) {
-                System.out.println("Kérem adja meg " + (j+1) +" hőmérsékletet");
-                homersekletek[j] = scan.nextDouble();
+            for (int j = 0; j < homersekletek.Length; j++) {
+                Console.WriteLine("Kérem adja meg " + (j+1) +" hőmérsékletet");
+                homersekletek[j] = Convert.ToDouble(Console.ReadLine());
             }
-            System.out.println(Arrays.toString(homersekletek));
+            Console.WriteLine("[{0}]", string.Join(", ", homersekletek));
             //*/
 
             int[] szamok5a = new int[10];
-            for (int j = 0; j < szamok5a.length; j++)
+            for (int j = 0; j < szamok5a.Length; j++)
             {
-                szamok5a[j] = rnd.nextInt(100) + 1;
+                szamok5a[j] = rnd.Next(100) + 1;
             }
-            System.out.println(Arrays.toString(szamok5a));
-            for (int j = 0; j < szamok5a.length; j++)
+            Console.WriteLine("[{0}]", string.Join(", ", szamok5a));
+            for (int j = 0; j < szamok5a.Length; j++)
             {
                 if (szamok5a[j] < 50)
                 {
-                    System.out.print(szamok5a[j] + ", ");
+                    Console.Write(szamok5a[j] + ", ");
                 }
             }
-            System.out.println("");
-            for (int szam : szamok5a)
+            Console.WriteLine("");
+            /*!!foreach (int szam : szamok5a)
             { //fore -> for each.
                 if (szam % 2 == 0)
                 {
-                    System.out.print(szam + ", ");
+                    Console.Write(szam + ", ");
                 }
             }
+            !!//*/
 
             //1. Hozz létre egy 10 elemű egész számokat tartalmazni képes tömböt, majd írd ki az elemeit vesszővel elválasztva egy sorba! Állítsd át a tömb minden elemét 22-re, majd ismét írd ki!
             int[] a51 = new int[10];
-            System.out.println(Arrays.toString(a51));// Nem biztos, hogy ezt kérde, de ez is megoldás!!
-            Arrays.fill(a51, 22);
-            System.out.println(Arrays.toString(a51));
+            Console.WriteLine("[{0}]", string.Join(", ", a51));// Nem biztos, hogy ezt kérde, de ez is megoldás!!
+            Array.Fill(a51, 22);
+            Console.WriteLine("[{0}]", string.Join(", ", a51));
 
             //2. Tölts fel egy tömböt a természetes számok négyzeteivel 1-től 100-ig! Listázd ki a tömb elemeit!
             int[] a52 = new int[100];
-            for (int j = 1; j <= a52.length; j++)
+            for (int j = 1; j <= a52.Length; j++)
             {
                 a52[j - 1] = j * j;
             }
-            System.out.println(Arrays.toString(a52));
+            Console.WriteLine("[{0}]", string.Join(", ", a52));
 
             //3. Hozz létre egy tömböt, akkora méretűt, amekkorát a felhasználó igényel. Töltsd fel a felhasználótól bekért egész számokkal, majd írd ki a tömböt.
-            /*
-            System.out.println("Kérem a tömb nagyságát: ");
-            int a53 = scan.nextInt();
+            //*
+            Console.WriteLine("Kérem a tömb nagyságát: ");
+            int a53 = Convert.ToInt32(Console.ReadLine());
             int[] b53 = new int[a53];
-            System.out.println("Kérem az elemeit: ");
-            for (int j = 0; j < b53.length; j++) {
-                b53[j]= scan.nextInt();
+            Console.WriteLine("Kérem az elemeit: ");
+            for (int j = 0; j < b53.Length; j++) {
+                b53[j]= Convert.ToInt32(Console.ReadLine());
             }
-            System.out.println(Arrays.toString(b53));
+            Console.WriteLine("[{0}]", string.Join(", ", b53));
             //*/
             //4. Kérdezd meg a felhasználótól, hogy milyen típusú adatot szeretne tárolni! (egész számokat, valós számokat, vagy szövegeket)! Kérdezd meg, hogy hány ilyen adatot kíván tárolni, majd kérd be tőle az adatokat és írd ki egymás alá!
-            /*
-            System.out.println("Vállasszon egy számot milyen adatokat akar eltárolni: 1 : egész szám; 2 : valós szám; 3 : szövegek");
-            int a54 = scan.nextInt();
+            //*
+            Console.WriteLine("Vállasszon egy számot milyen adatokat akar eltárolni: 1 : egész szám; 2 : valós szám; 3 : szövegek");
+            int a54 = Convert.ToInt32(Console.ReadLine());
             while(a54 != 1 && a54 != 2 && a54 != 3){
-                System.out.println("A megkapott érték nem megfelelő! Vállasszon egy számot milyen adatokat akar eltárolni: 1 : egész szám; 2 : valós szám; 3 : szövegek");
-                a54 = scan.nextInt();            
+                Console.WriteLine("A megkapott érték nem megfelelő! Vállasszon egy számot milyen adatokat akar eltárolni: 1 : egész szám; 2 : valós szám; 3 : szövegek");
+                a54 = Convert.ToInt32(Console.ReadLine());            
             }
             if(a54 == 1) { //Ugyan ezt megoldani Switch és Case-ekben!!
-                System.out.println("Mennyi adatok akar eltárolni?");
-                int b54 = scan.nextInt();
+                Console.WriteLine("Mennyi adatok akar eltárolni?");
+                int b54 = Convert.ToInt32(Console.ReadLine());
                 int[] c54 = new int[b54];
-                for (int j = 0; j < c54.length; j++) {
-                    System.out.println("Kérem az következő adatot");
-                    c54[j] = scan.nextInt();
+                for (int j = 0; j < c54.Length; j++) {
+                    Console.WriteLine("Kérem az következő adatot");
+                    c54[j] = Convert.ToInt32(Console.ReadLine());
                 }
-                for (int j = 0; j < c54.length; j++) {
-                    System.out.println(c54[j]);
+                for (int j = 0; j < c54.Length; j++) {
+                    Console.WriteLine(c54[j]);
                 }
             }else if (a54 == 2) {
-                System.out.println("Mennyi adatok akar eltárolni?");
-                int b54 = scan.nextInt();
+                Console.WriteLine("Mennyi adatok akar eltárolni?");
+                int b54 = Convert.ToInt32(Console.ReadLine());
                 double[] c54 = new double[b54];
-                for (int j = 0; j < c54.length; j++) {
-                    System.out.println("Kérem az következő adatot");
-                    c54[j] = scan.nextDouble();                
+                for (int j = 0; j < c54.Length; j++) {
+                    Console.WriteLine("Kérem az következő adatot");
+                    c54[j] = Convert.ToDouble(Console.ReadLine());                
                 }
-                for (int j = 0; j < c54.length; j++) {
-                    System.out.println(c54[j]);
+                for (int j = 0; j < c54.Length; j++) {
+                    Console.WriteLine(c54[j]);
                 }            
             }else if (a54 == 3) {
-                System.out.println("Mennyi adatok akar eltárolni?");
-                int b54 = scan.nextInt();
+                Console.WriteLine("Mennyi adatok akar eltárolni?");
+                int b54 = Convert.ToInt32(Console.ReadLine());
                 String[] c54 = new String[b54];
-                for (int j = 0; j < c54.length; j++) {
-                    System.out.println("Kérem a következő adatot");
-                    c54[j] = scan.next();
+                for (int j = 0; j < c54.Length; j++) {
+                    Console.WriteLine("Kérem a következő adatot");
+                    c54[j] = Console.ReadLine();
                 }
-                for (int j = 0; j < c54.length; j++) {
-                    System.out.println(c54[j]);
+                for (int j = 0; j < c54.Length; j++) {
+                    Console.WriteLine(c54[j]);
                 }
             }
             //*/
             //5. Állíts elő egy 10 elemű tömböt, amely egész számokat tartalmazhat!
-            int a55[] = new int[10];
+            int[] a55 = new int[10];
             //a. Töltsd fel az 50..100 közötti intervallumból véletlenszámokkal! 
-            for (int j = 0; j < a55.length; j++)
+            for (int j = 0; j < a55.Length; j++)
             {
-                a55[j] = rnd.nextInt(50) + 51;
+                a55[j] = rnd.Next(50) + 51;
             }
             //b. Írd ki a tömb elemeit vesszővel elválasztva egy sorba!
-            for (int j = 0; j < a55.length; j++)
+            for (int j = 0; j < a55.Length; j++)
             {
-                System.out.print(a55[j] + ", ");
+                Console.WriteLine(a55[j] + ", ");
             }
-            System.out.println("");
+            Console.WriteLine("");
             //c. Írd ki a tömböt azon a módon, ahogy az Arrays.toString() metódus teszi. Pl. [54, 23, 45, 7, 8, 46, 81, 9, 10]
-            System.out.println(Arrays.toString(a55));
+            Console.WriteLine("[{0}]", string.Join(", ", a55));
             //d. Írd ki a tömböt visszafelé.
-            for (int j = a55.length - 1; j >= 0; j--)
+            for (int j = a55.Length - 1; j >= 0; j--)
             {
-                System.out.print(a55[j] + ", ");
+                Console.WriteLine(a55[j] + ", ");
             }
-            System.out.println("");
+            Console.WriteLine("");
             //e. Írd ki a tömböt a következőképpen: Az [1] és [10], a [2] és [9],.., végül az [5] és a [6] elemek különbségét.
-            for (int j = 0; j < a55.length / 2; j++)
+            for (int j = 0; j < a55.Length / 2; j++)
             {
-                System.out.println(a55[j] - a55[9 - j]);
+                Console.WriteLine(a55[j] - a55[9 - j]);
             }
             //f. Írd ki a tömb egymás melletti elemeinek különbségét.
-            for (int j = 0; j < a55.length - 1; j++)
+            for (int j = 0; j < a55.Length - 1; j++)
             {
-                System.out.println(a55[j] - a55[j + 1]);
+                Console.WriteLine(a55[j] - a55[j + 1]);
             }
             //g. Írd ki a tömbben található páros/páratlan számokat, az 50-nél kisebb, vagy 70-nél nagyobb számokat.
-            for (int j = 0; j < a55.length; j++)
+            for (int j = 0; j < a55.Length; j++)
             {
                 if (a55[j] % 2 == 0)
                 {
-                    System.out.println(a55[j] + " páros szám");
+                    Console.WriteLine(a55[j] + " páros szám");
                 }
                 else
                 {
-                    System.out.println(a55[j] + " páratlan");
+                    Console.WriteLine(a55[j] + " páratlan");
                 }
                 if (a55[j] > 70)
                 {
-                    System.out.println(a55[j] + " 70-nél nagyobb szám");
+                    Console.WriteLine(a55[j] + " 70-nél nagyobb szám");
                 }
             }
             //6. Hozz létre egy igaz-hamis értékeket tárolni képes 15 elemű tömböt. Töltsd fel véletlen logikai értékekkel. (rnd.nextBoolean() függvény használatával). Listázd ki a tömböt a következőképpen:1. Sikeres vizsga (ha true az érték)2. Sikertelen vizsga (ha false az érték)
-            boolean[] a56 = new boolean[15];
-            for (int j = 0; j < a56.length; j++)
+            /* !!
+            Boolean[] a56 = new Boolean[15];
+            for (int j = 0; j < a56.Length; j++)
             {
                 a56[j] = rnd.nextBoolean();
                 if (a56[j] == true)
                 {
-                    System.out.println(a56[j] + " sikeres vizsga");
+                    Console.WriteLine(a56[j] + " sikeres vizsga");
                 }
                 else
                 {
-                    System.out.println(a56[j] + " sikertelen vizsga");
+                    Console.WriteLine(a56[j] + " sikertelen vizsga");
                 }
             }
+            !!//*/
             //7. Hozz létre egy hónapneveket tartalmazó tömböt, a tömb értékeit a létrehozáskor inicializáld! Írd ki az alábbiak szerint a tartalmát: 1. hónap: január 2. hónap: február 3. …
             String[] a57 = { "január", "február", "március", "április", "május", "június", "július", "augusztus", "szeptember", "október", "november", "december" };
             int co57 = 1;
-            for (int j = 0; j < a57.length; j++)
+            for (int j = 0; j < a57.Length; j++)
             {
-                System.out.println(co57 + ". hónap: " + a57[j]);
+                Console.WriteLine(co57 + ". hónap: " + a57[j]);
                 co57++;
             }
-            /*
+            //*
             //8. Készíts tömböt, amely 5 sztringet tartalmazhat!
             String[] a58 = new String[5];
             //a. Kérj be a felhasználótól 5 nevet!
-            for (int j = 0; j < a58.length; j++) {
-                System.out.println("Kérem a nevet: ");
-                a58[j] = scan.next();
+            for (int j = 0; j < a58.Length; j++) {
+                Console.WriteLine("Kérem a nevet: ");
+                a58[j] = Console.ReadLine();
             }
             //b. Rendezd a tömböt az Arrays.sort() metódussal! 
-            Arrays.sort(a58);
+            Array.Sort(a58);
             //c. Írd ki a neveket nagybetűs formátumban!
-            System.out.println(Arrays.toString(a58).toUpperCase());
+            Console.WriteLine("[{0}]", string.Join(", ", a58).ToUpper()); //!!
             //d. Írd ki a nevek hosszát! Pl. 1. Pisti -> 5 2. Lali -> 4
-            for (int j = 0; j < a58.length; j++) {
-                System.out.println(a58[j] + " -> " + a58[j].length());
+            for (int j = 0; j < a58.Length; j++) {
+                Console.WriteLine(a58[j] + " -> " + a58[j].Length);
             }
             //e. Döntsd el, hogy egy adott név szerepel-e a tömbben! Használd az Arrays.binarySearch() metódust a feladat megoldására!
-            System.out.println("írj be egy nevet, hogy szerepel-e");
-            String b58 = scan.next();
-            if(Arrays.binarySearch(a58, b58) > 0){
-                System.out.println("A név szerepel");
+            Console.WriteLine("írj be egy nevet, hogy szerepel-e");
+            String b58 = Console.ReadLine();
+            if(Array.BinarySearch(a58, b58) > 0){
+                Console.WriteLine("A név szerepel");
             } else {
-                System.out.println("A név nem szerepel");
+                Console.WriteLine("A név nem szerepel");
             }
             //*/
             //9. Készíts két tömböt, töltsd fel őket létrehozáskor kezdőértékekkel. Döntsd el, hogy a tömbök egyenlők-e, azaz elemeik rendről –rendre megegyeznek-e! Használd az Arrays.equals() metódust a feladat elvégzésére.
             int[] a59 = { 3, 2, 1 };
             int[] b59 = { 1, 2, 3 };
-            System.out.println(Arrays.equals(a59, b59));
+            Console.WriteLine(Array.Equals(a59, b59));
 
             //10. Hozz létre egy 10 elemű, egész számokat tartalmazó tömböt, majd töltsd fel véletlenszámokkal az 1 és 20 intervallumban!
-            /*
+            //*
             int[] a510 = new int[10];
-            for (int j = 0; j < a510.length; j++) {
-                a510[j] = rnd.nextInt(19)+1;
+            for (int j = 0; j < a510.Length; j++) {
+                a510[j] = rnd.Next(19)+1;
             }
             //a. Írd ki a tömb elemeit egy sorba, egymástól vesszővel elválasztva!
-            System.out.println(Arrays.toString(a510));
+            Console.WriteLine("[{0}]", string.Join(", ", a510));
             //b. Kérj be a felhasználótól egy számot és mondd meg, hogy az adott szám melyik indexen- (indexeken, ha ismétlődő) helyezkedik el. Ha nincs ilyen szám a tömbben, akkor jelezd.
-            System.out.println("Kérek egy számot 1 és 20 között");
-            int b510 = scan.nextInt();
+            Console.WriteLine("Kérek egy számot 1 és 20 között");
+            int b510 = Convert.ToInt32(Console.ReadLine());
             int co510 = 0;
-            for (int j = 0; j < a510.length; j++) {
+            for (int j = 0; j < a510.Length; j++) {
                 if(a510[j] == b510){
-                    System.out.println(j+1);
+                    Console.WriteLine(j+1);
                     co510++;
                 }
             }
             if(co510 == 0){
-                System.out.println("A szám nem szerepel");
+                Console.WriteLine("A szám nem szerepel");
             }
             //*/
             //11. Állíts elő egy 10 elemű tömböt, amely egész számokat tartalmazhat!
-            /*
+            //*
             int[] a511 = new int[10];
             //c. Töltsd fel a felhasználótól bekért számokkal a tömböt! 
-            for (int j = 0; j < a511.length; j++) {
-                System.out.println("Kérek egy számot");
-                a511[j] = scan.nextInt();
+            for (int j = 0; j < a511.Length; j++) {
+                Console.WriteLine("Kérek egy számot");
+                a511[j] = Convert.ToInt32(Console.ReadLine());
             }
-            System.out.println(Arrays.toString(a511));
+            Console.WriteLine("[{0}]", string.Join(", ", a511));
 
             //d. Töltsd fel a felhasználótól bekért páros számokkal a tömböt. A nem páros számokat ne fogadja el a program, azonban mind a 10 szám legyen meg a bekérés végén!
             int[] b511 = new int[10];
             int co511 = 0;
             int c511;
             do {
-                System.out.println("Kérek egy számot");
-                c511 = scan.nextInt();
+                Console.WriteLine("Kérek egy számot");
+                c511 = Convert.ToInt32(Console.ReadLine());
                 if(c511%2 == 0){
                     b511[co511] = c511;
                     co511++;
                 }else{
-                    System.out.println("A szám nem páros!");
+                    Console.WriteLine("A szám nem páros!");
                 }
             } while (co511 != 10);
-            System.out.println(Arrays.toString(b511));
+            Console.WriteLine("[{0}]", string.Join(", ", b511));
             //*/
             //12. Egy 5 elemű tömbben az értékek 1 és 5 közötti véletlenszámok. Készítshisztogramot: jeleníts meg annyi csillagot, amekkorák az egyes értékek a tömbben. Pl. [4, 3, 5, 2, 1] **** *** ***** ** *
             int[] a512 = new int[5];
-            for (int j = 0; j < a512.length; j++)
+            for (int j = 0; j < a512.Length; j++)
             {
-                a512[j] = rnd.nextInt(4) + 1;
+                a512[j] = rnd.Next(4) + 1;
                 for (int m = 1; m <= a512[j]; m++)
                 {
-                    System.out.print("*");
+                    Console.Write("*");
                 }
-                System.out.println("");
+                Console.WriteLine("");
             }
             //13. Véletlenszerűen dobjunk 100-szor egy szabályos kockával, majd írd ki, hogy hányszor dobtunk 1-est, 2-est stb.! A kockadobásokat egy 6 elemű tömbben számláld!
             int[] a513 = new int[100]; //valószínűleg nem így!!
-            for (int j = 0; j < a513.length; j++)
+            for (int j = 0; j < a513.Length; j++)
             {
-                a513[j] = rnd.nextInt(5) + 1;
+                a513[j] = rnd.Next(5) + 1;
             }
             int co5131 = 0;
             int co5132 = 0;
@@ -1056,7 +1059,7 @@ namespace Hello_World
             int co5134 = 0;
             int co5135 = 0;
             int co5136 = 0;
-            for (int j = 0; j < a513.length; j++)
+            for (int j = 0; j < a513.Length; j++)
             {
                 if (a513[j] == 1)
                 {
@@ -1084,13 +1087,13 @@ namespace Hello_World
                 }
             }
             int[] b513 = { co5131, co5132, co5133, co5134, co5135, co5136 };
-            System.out.println(Arrays.toString(b513));
+            Console.WriteLine("[{0}]", string.Join(", ", b513));
 
             //14. Hozz létre egy tömböt, amit létrehozáskor valós számokkal töltesz fel. Döntsd el, hogy a tömb növekvően rendezett-e. A program írja ki, hogy a tömb rendezett, vagy nem rendezett.
             double[] a514 = { 0.1, 1.1, 2.3 };
-            boolean boo514 = false;
+            Boolean boo514 = false;
             int co514 = 0;
-            for (int j = 0; j < a514.length - 1; j++)
+            for (int j = 0; j < a514.Length - 1; j++)
             {
                 if (a514[j] < a514[j + 1])
                 {
@@ -1103,66 +1106,66 @@ namespace Hello_World
             }
             if (boo514)
             {
-                System.out.println("A tömb rendezett");
+                Console.WriteLine("A tömb rendezett");
             }
             else
             {
-                System.out.println("A tömb nem rendezett");
+                Console.WriteLine("A tömb nem rendezett");
             }
             //15. Hozz létre két 10 elemű egész számokat tartalmazni képes tömböt A és B tömb. Az egyiket A töltsd fel 0-9- intervallumban véletlenszámokkal, a másikat B 1-100 közötti véletlenszámokkal. Írd ki a B tömb elemeit az A tömbben létrehozott számok sorrendjében! Tehát, ha az A-ban pl. 2,5,8.. van, akkor a B tömb 2., 5., és 8… elemeit írd ki egymás után
             int[] a515 = new int[10];
             int[] b515 = new int[10];
-            for (int j = 0; j < a515.length; j++)
+            for (int j = 0; j < a515.Length; j++)
             {
-                a515[j] = rnd.nextInt(10);
+                a515[j] = rnd.Next(10);
             }
-            for (int j = 0; j < b515.length; j++)
+            for (int j = 0; j < b515.Length; j++)
             {
-                b515[j] = rnd.nextInt(99) + 1;
+                b515[j] = rnd.Next(99) + 1;
             }
-            for (int j = 0; j < b515.length; j++)
+            for (int j = 0; j < b515.Length; j++)
             {
-                System.out.println(b515[a515[j]]);
+                Console.WriteLine(b515[a515[j]]);
             }
 
             //16. Tölts fel egy 20 elemű tömböt véletlenszámokkal a 10 és 30 intervallumban.
             int[] a516 = new int[20];
-            for (int j = 0; j < a516.length; j++)
+            for (int j = 0; j < a516.Length; j++)
             {
-                a516[j] = rnd.nextInt(20) + 11;
+                a516[j] = rnd.Next(20) + 11;
             }
             //e. Határozd meg, hogy van –e olyan számpár a tömbben, ami a 42-őt adja eredményül. Ha igen, írd ki ezt a számpárt, majd állítsd le a programot.Megengedett, hogy egy tömbbéli elem adja ki a számot. Pl. 21.
             int b516;
-            for (int j = 0; j < a516.length; j++)
+            for (int j = 0; j < a516.Length; j++)
             {
-                for (int m = 0; m < a516.length; m++)
+                for (int m = 0; m < a516.Length; m++)
                 {
                     b516 = a516[j] + a516[m];
                     if (b516 == 42)
                     {
-                        System.out.println("Az " + j + ". és a " + m + ".");
+                        Console.WriteLine("Az " + j + ". és a " + m + ".");
                     }
                 }
             }
             //17. Tölts fel egy 10 elemű egész számokat tartalmazó tömböt kezdőértékekkel. Egy másik, 3 elemű tömböt is tölts fel a felhasználótól bekért egész számokkal. Döntsd el, hogy a bekért számok szekvenciája megtalálható-e a tömbben!
-            /*
+            //*
             int[] a517 ={0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
             int[] b517 = new int[3];
-            for (int j = 0; j < b517.length; j++) {
-                System.out.println("Kérek egy számot");
-                b517[j] = scan.nextInt();
+            for (int j = 0; j < b517.Length; j++) {
+                Console.WriteLine("Kérek egy számot");
+                b517[j] = Convert.ToInt32(Console.ReadLine());
             }
-            boolean boo517 = false;
-            for (int j = 0; j < a517.length-2; j++) {
+            Boolean boo517 = false;
+            for (int j = 0; j < a517.Length-2; j++) {
                 int[] c517 = {a517[j], a517[j+1], a517[j+2]};
-                if(Arrays.equals(b517, c517)){
+                if(Array.Equals(b517, c517)){
                     boo517 = true;
                 }
             }
             if(boo517){
-                System.out.println("A sor metalálható");
+                Console.WriteLine("A sor metalálható");
             }else{
-                System.out.println("A sor nem található meg");
+                Console.WriteLine("A sor nem található meg");
             }
             //*/
             //18. Cseréld meg egy tömb két elemét! Hogy melyik két elemet cserélje fel, azt a felhasználótól kérd be!
@@ -1170,37 +1173,37 @@ namespace Hello_World
             int b518 = a518[4];
             a518[4] = a518[2];
             a518[2] = b518;
-            System.out.println(Arrays.toString(a518));
+            Console.WriteLine("[{0}]", string.Join(", ", a518));
             //19. Cseréld fel egy tömb egymás mellett lévő elemeit a következőképpen. 1-2, 3-4, 4-5…9-10 elemeket.
             int[] a519 = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             int b519;
-            for (int j = 0; j < a519.length; j += 2)
+            for (int j = 0; j < a519.Length; j += 2)
             {
                 b519 = a519[j];
                 a519[j] = a519[j + 1];
                 a519[j + 1] = b519;
             }
-            System.out.println(Arrays.toString(a519));
+            Console.WriteLine("[{0}]", string.Join(", ", a519));
             //20. Tölts fel egy tömböt 5 véletlenszámmal. Cseréld fel két véletlenszerűen kiválasztott elemét! Ezt addig ismételd, ameddig a tömb rendezett nem lesz.
             int[] a520 = new int[5];
-            for (int j = 0; j < a520.length; j++)
+            for (int j = 0; j < a520.Length; j++)
             {
-                a520[j] = rnd.nextInt(5);
+                a520[j] = rnd.Next(5);
             }
-            System.out.println(Arrays.toString(a520));
+            Console.WriteLine("[{0}]", string.Join(", ", a520));
             int b520;
             int rn520;
             int ra520;
             int co520;
-            boolean boo520 = true;
+            Boolean boo520 = true;
             do
             {
                 co520 = 0;
-                rn520 = rnd.nextInt(5);
-                ra520 = rnd.nextInt(5);
+                rn520 = rnd.Next(5);
+                ra520 = rnd.Next(5);
                 b520 = a520[rn520];
                 a520[rn520] = a520[ra520];
-                for (int j = 0; j < a520.length - 1; j++)
+                for (int j = 0; j < a520.Length - 1; j++)
                 {
                     if (a520[j] < a520[j + 1] || a520[j] == a520[j + 1])
                     {
@@ -1213,7 +1216,7 @@ namespace Hello_World
                     boo520 = false;
                 }
             } while (boo520);
-            System.out.println(Arrays.toString(a520));
+            Console.WriteLine("[{0}]", string.Join(", ", a520));
 
 
         }
